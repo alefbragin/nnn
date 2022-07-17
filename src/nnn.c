@@ -4977,7 +4977,7 @@ static void show_help(const char *path)
 		 "b^G  QuitCD%-18cQ  Pick/err, quit\n"
 	"0\n"
 	"1FILTER & PROMPT\n"
-		  "c/  Filter%-17c^N  Toggle type-to-nav\n"
+		  "c/  Filter%-17c^/  Toggle type-to-nav\n"
 		"aEsc  Exit prompt%-12c^L  Toggle last filter\n"
 			"d%-20cAlt+Esc  Unfilter, quit context\n"
 	"0\n"

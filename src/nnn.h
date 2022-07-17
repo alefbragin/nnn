@@ -194,7 +194,7 @@ static struct key bindings[] = {
 	/* Filter */
 	{ '/',            SEL_FLTR },
 	/* Toggle filter mode */
-	{ CONTROL('N'),   SEL_MFLTR },
+	{ CONTROL('_'),   SEL_MFLTR },
 	/* Toggle hide .dot files */
 	{ '.',            SEL_HIDDEN },
 	/* Detailed listing */
