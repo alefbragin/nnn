@@ -4991,7 +4991,7 @@ static void show_help(const char *path)
 	    "6Space +  (Un)select%-12cm-m  Select range/clear\n"
 	          "ca  Select all%-14cA  Invert sel\n"
 	       "9p ^P  Copy here%-12cw ^W  Cp/mv sel as\n"
-	       "9v ^V  Move here%-15cE  Edit sel list\n"
+	       "9t ^T  Move here%-15cE  Edit sel list\n"
 	       "9x ^X  Delete%-16cEsc  Send to FIFO\n"
 	"0\n"
 	"1MISC\n"
