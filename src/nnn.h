@@ -173,8 +173,10 @@ static struct key bindings[] = {
 	/* Connect to server over SSHFS */
 	{ 'c',            SEL_REMOTE },
 	/* Cycle contexts in forward direction */
-	{ '\t',           SEL_CYCLE },
+	{ 'n',            SEL_CYCLE },
+	{ CONTROL('N'),   SEL_CYCLE },
 	/* Cycle contexts in reverse direction */
+	{ 'N',            SEL_CYCLER },
 	{ KEY_BTAB,       SEL_CYCLER },
 	/* Go to/create context N */
 	{ '1',            SEL_CTX1 },
