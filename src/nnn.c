@@ -4971,7 +4971,7 @@ static void show_help(const char *path)
 	   "5Ret Rt l  Open%-20c'  First file/match\n"
 	       "9g ^A  Top%-21c.  Toggle hidden\n"
 	       "9G ^E  End%-20c^J  Toggle auto-advance on open\n"
-	      "8B (,)  Book(mark)%-11cb ^/  Select bookmark\n"
+	      "8B (,)  Book(mark)%-14cb  Select bookmark\n"
 		"a1-4  Context%-11c(Sh)Tab  Cycle/new context\n"
 	    "62Esc ^Q  Quit%-20cq  Quit context\n"
 		 "b^G  QuitCD%-18cQ  Pick/err, quit\n"
