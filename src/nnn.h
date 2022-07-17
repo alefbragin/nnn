@@ -245,9 +245,10 @@ static struct key bindings[] = {
 	/* Create a new file */
 	{ 'a',            SEL_NEW },
 	/* Show rename prompt */
+	{ 'r',            SEL_RENAME },
 	{ CONTROL('R'),   SEL_RENAME },
 	/* Rename contents of current dir */
-	{ 'r',            SEL_RENAMEMUL },
+	{ 'R',            SEL_RENAMEMUL },
 	/* Disconnect a SSHFS mount point */
 	{ 'u',            SEL_UMOUNT },
 	/* Show help */
