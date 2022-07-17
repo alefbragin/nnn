@@ -4982,7 +4982,7 @@ static void show_help(const char *path)
 			"d%-20cAlt+Esc  Unfilter, quit context\n"
 	"0\n"
 	"1FILES\n"
-	       "9o ^O  Open with%-15cn  Create new/link\n"
+	       "9o ^O  Open with%-15ca  Create new/link\n"
 	       "9f ^F  File stats%-14cd  Detail mode toggle\n"
 		 "b^R  Rename/dup%-14cr  Batch rename\n"
 		  "cz  Archive%-17ce  Edit file\n"
