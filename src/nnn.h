@@ -236,6 +236,7 @@ static struct key bindings[] = {
 	{ 'w',            SEL_CPMVAS },
 	{ CONTROL('W'),   SEL_CPMVAS },
 	/* Delete from selection buffer */
+	{ 'd',            SEL_RM },
 	{ 'x',            SEL_RM },
 	{ CONTROL('X'),   SEL_RM },
 	/* Open in a custom application */

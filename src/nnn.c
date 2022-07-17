@@ -4991,7 +4991,7 @@ static void show_help(const char *path)
 	          "cV  Select all%-13c^V  Invert sel\n"
 	       "9p ^P  Copy here%-12cw ^W  Cp/mv sel as\n"
 	       "9t ^T  Move here%-15cE  Edit sel list\n"
-	       "9x ^X  Delete%-16cEsc  Send to FIFO\n"
+	     "7d x ^X  Delete%-16cEsc  Send to FIFO\n"
 	"0\n"
 	"1MISC\n"
 	      "8Alt ;  Select plugin%-11c=  Launch app\n"
