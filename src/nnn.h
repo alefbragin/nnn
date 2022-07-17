@@ -275,9 +275,9 @@ static struct key bindings[] = {
 	/* Set time type */
 	{ 'T',            SEL_TIMETYPE },
 	/* Quit a context */
-	{ 'q',            SEL_QUITCTX },
+	{ CONTROL('G'),   SEL_QUITCTX },
 	/* Change dir on quit */
-	{ CONTROL('G'),   SEL_QUITCD },
+	{ 'q',            SEL_QUITCD },
 	/* Quit */
 	{ CONTROL('Q'),   SEL_QUIT },
 	/* Quit with an error code */
