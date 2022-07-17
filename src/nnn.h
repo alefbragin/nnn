@@ -214,13 +214,14 @@ static struct key bindings[] = {
 	{ CONTROL('L'),   SEL_REDRAW },
 	/* Select current file path */
 	{ ' ',            SEL_SEL },
-	{ '+',            SEL_SEL },
+	{ 'y',            SEL_SEL },
+	{ CONTROL('Y'),   SEL_SEL },
 	/* Toggle select multiple files */
-	{ 'm',            SEL_SELMUL },
+	{ 'v',            SEL_SELMUL },
 	/* Select all files in current dir */
-	{ 'a',            SEL_SELALL },
+	{ 'V',            SEL_SELALL },
 	/* Invert selection in current dir */
-	{ 'A',            SEL_SELINV },
+	{ CONTROL('V'),   SEL_SELINV },
 	/* List, edit selection */
 	{ 'E',            SEL_SELEDIT },
 	/* Copy from selection buffer */

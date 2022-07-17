@@ -3332,7 +3332,6 @@ static int filterentries(char *path, char *lastname)
 			if (cfg.filtermode) {
 				switch (*ch) {
 				case '\'': // fallthrough /* Go to first non-dir file */
-				case '+': // fallthrough /* Toggle file selection */
 				case ',': // fallthrough /* Mark CWD */
 				case '-': // fallthrough /* Visit last visited dir */
 				case '.': // fallthrough /* Show hidden files */
@@ -4988,8 +4987,8 @@ static void show_help(const char *path)
 		 "b^R  Rename/dup%-14cr  Batch rename\n"
 		  "cz  Archive%-17ce  Edit file\n"
 		  "c*  Toggle exe%-14c>  Export list\n"
-	    "6Space +  (Un)select%-12cm-m  Select range/clear\n"
-	          "ca  Select all%-14cA  Invert sel\n"
+	 "3Space y ^Y  (Un)select%-12cv-v  Select range/clear\n"
+	          "cV  Select all%-13c^V  Invert sel\n"
 	       "9p ^P  Copy here%-12cw ^W  Cp/mv sel as\n"
 	       "9t ^T  Move here%-15cE  Edit sel list\n"
 	       "9x ^X  Delete%-16cEsc  Send to FIFO\n"
