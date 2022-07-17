@@ -170,7 +170,7 @@ static struct key bindings[] = {
 	/* Go to / */
 	{ '`',            SEL_CDROOT },
 	/* Leader key */
-	{ 'b',            SEL_BMOPEN },
+	{ '\'',           SEL_BMOPEN },
 	/* Connect to server over SSHFS */
 	{ 'c',            SEL_REMOTE },
 	/* Cycle contexts in forward direction */
@@ -191,9 +191,9 @@ static struct key bindings[] = {
 	{ '8',            SEL_CTX8 },
 #endif
 	/* Mark a path to visit later */
-	{ ',',            SEL_MARK },
+	{ 'm',            SEL_MARK },
 	/* Create a bookmark */
-	{ 'B',            SEL_BMARK },
+	{ 'M',            SEL_BMARK },
 	/* Filter */
 	{ '/',            SEL_FLTR },
 	/* Toggle filter mode */

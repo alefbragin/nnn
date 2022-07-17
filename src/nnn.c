@@ -3331,7 +3331,8 @@ static int filterentries(char *path, char *lastname)
 
 			if (cfg.filtermode) {
 				switch (*ch) {
-				case ',': // fallthrough /* Mark CWD */
+				// TODO: try to bind ^M: replace all \r to KEY_ENTER
+				// case ',': // fallthrough /* Mark CWD */
 				case '-': // fallthrough /* Visit last visited dir */
 				case '.': // fallthrough /* Show hidden files */
 				case ';': // fallthrough /* Run plugin key */
@@ -4908,7 +4909,7 @@ static size_t handle_bookmark(const char *bmark, char *newpath)
 
 		if (bmark) { /* There is a marked directory */
 			g_buf[--r] = ' ';
-			g_buf[++r] = ',';
+			g_buf[++r] = '\'';
 			g_buf[++r] = '\0';
 			++r;
 		}
@@ -4918,7 +4919,7 @@ static size_t handle_bookmark(const char *bmark, char *newpath)
 	}
 
 	r = FALSE;
-	if (fd == ',') /* Visit marked directory */
+	if (fd == '\'') /* Visit marked directory */
 		bmark ? xstrsncpy(newpath, bmark, PATH_MAX) : (r = MSG_NOT_SET);
 	else if (fd == '\r') { /* Visit bookmarks directory */
 		mkpath(cfgpath, toks[TOK_BM], newpath);
@@ -4970,7 +4971,7 @@ static void show_help(const char *path)
 	   "5Ret Rt l  Open%-17cf ^F  First file/match\n"
 	       "9g ^A  Top%-21c.  Toggle hidden\n"
 	       "9G ^E  End%-20c^J  Toggle auto-advance on open\n"
-	      "8B (,)  Book(mark)%-14cb  Select bookmark\n"
+	      "8M (m)  Book(mark)%-14c'  Select bookmark\n"
 		"a1-4  Context%-4cn ^N (N S-Tab)  Cycle (new) context\n"
 	    "62Esc ^Q  Quit%-20cq  Quit context\n"
 		 "b^G  QuitCD%-18cQ  Pick/err, quit\n"
