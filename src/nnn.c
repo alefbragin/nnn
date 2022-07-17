@@ -4983,7 +4983,7 @@ static void show_help(const char *path)
 	"0\n"
 	"1FILES\n"
 	       "9o ^O  Open with%-15ca  Create new/link\n"
-	       "9f ^F  File stats%-14cd  Detail mode toggle\n"
+	       "9i ^I  File stats%-14cI  Detail mode toggle\n"
 		 "b^R  Rename/dup%-14cr  Batch rename\n"
 		  "cz  Archive%-17ce  Edit file\n"
 		  "c*  Toggle exe%-14c>  Export list\n"

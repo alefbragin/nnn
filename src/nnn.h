@@ -200,10 +200,10 @@ static struct key bindings[] = {
 	/* Toggle hide .dot files */
 	{ '.',            SEL_HIDDEN },
 	/* Detailed listing */
-	{ 'd',            SEL_DETAIL },
+	{ 'I',            SEL_DETAIL },
 	/* File details */
-	{ 'f',            SEL_STATS },
-	{ CONTROL('F'),   SEL_STATS },
+	{ 'i',            SEL_STATS },
+	{ CONTROL('I'),   SEL_STATS },
 	/* Toggle executable status */
 	{ '*',            SEL_CHMODX },
 	/* Create archive */
