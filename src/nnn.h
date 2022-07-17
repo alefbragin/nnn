@@ -159,7 +159,8 @@ static struct key bindings[] = {
 	{ 'G',            SEL_END },
 	{ CONTROL('E'),   SEL_END },
 	/* Go to first file */
-	{ '\'',           SEL_FIRST },
+	{ 'f',            SEL_FIRST },
+	{ CONTROL('F'),   SEL_FIRST },
 	/* HOME */
 	{ '~',            SEL_CDHOME },
 	/* Initial directory */

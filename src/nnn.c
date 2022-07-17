@@ -658,7 +658,7 @@ static const char * const messages[] = {
 	"invalid regex",
 	"'a'u/'d'u/'e'xt/'r'ev/'s'z/'t'm/'v'er/'c'lr/'^S'?",
 	"unmount failed! try lazy?",
-	"first file (\')/char?",
+	"first file ('^F')/char?",
 	"remove tmp file?",
 	"invalid key",
 	"unchanged",
@@ -3331,7 +3331,6 @@ static int filterentries(char *path, char *lastname)
 
 			if (cfg.filtermode) {
 				switch (*ch) {
-				case '\'': // fallthrough /* Go to first non-dir file */
 				case ',': // fallthrough /* Mark CWD */
 				case '-': // fallthrough /* Visit last visited dir */
 				case '.': // fallthrough /* Show hidden files */
@@ -4968,7 +4967,7 @@ static void show_help(const char *path)
 	       "9Up k  Up%-16cPgUp ^U  Page up\n"
 	       "9Dn j  Down%-14cPgDn ^D  Page down\n"
 	       "9Lt h  Parent%-12c~ ` @ -  ~, /, start, prev\n"
-	   "5Ret Rt l  Open%-20c'  First file/match\n"
+	   "5Ret Rt l  Open%-17cf ^F  First file/match\n"
 	       "9g ^A  Top%-21c.  Toggle hidden\n"
 	       "9G ^E  End%-20c^J  Toggle auto-advance on open\n"
 	      "8B (,)  Book(mark)%-14cb  Select bookmark\n"
@@ -5976,7 +5975,7 @@ static void handle_screen_move(enum action sel)
 		int r = (c == TOUPPER(*pdents[cur].name)) ? (cur + 1) : 0;
 
 		for (; r < ndents; ++r) {
-			if (((c == '\'') && !(pdents[r].flags & DIR_OR_DIRLNK))
+			if (((c == CONTROL('F')) && !(pdents[r].flags & DIR_OR_DIRLNK))
 			    || (c == TOUPPER(*pdents[r].name))) {
 				move_cursor((r) % ndents, 0);
 				break;
