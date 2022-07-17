@@ -208,8 +208,8 @@ static struct key bindings[] = {
 	/* Create archive */
 	{ 'z',            SEL_ARCHIVE },
 	/* Sort toggles */
-	{ 't',            SEL_SORT },
-	{ CONTROL('T'),   SEL_SORT },
+	{ 's',            SEL_SORT },
+	{ CONTROL('S'),   SEL_SORT },
 	/* Redraw window */
 	{ CONTROL('L'),   SEL_REDRAW },
 	/* Select current file path */

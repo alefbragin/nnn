@@ -656,7 +656,7 @@ static const char * const messages[] = {
 	"'o'pen/e'x'tract/'l's/'m'nt?",
 	"keys:",
 	"invalid regex",
-	"'a'u/'d'u/'e'xt/'r'ev/'s'z/'t'm/'v'er/'c'lr/'^T'?",
+	"'a'u/'d'u/'e'xt/'r'ev/'s'z/'t'm/'v'er/'c'lr/'^S'?",
 	"unmount failed! try lazy?",
 	"first file (\')/char?",
 	"remove tmp file?",
@@ -4998,7 +4998,7 @@ static void show_help(const char *path)
 	      "8Alt ;  Select plugin%-11c=  Launch app\n"
 	       "9! ^]  Shell%-19c]  Cmd prompt\n"
 		  "cc  Connect remote%-10cu  Unmount remote/archive\n"
-	       "9t ^T  Sort toggles%-12c$  Manage session\n"
+	       "9s ^S  Sort toggles%-12c$  Manage session\n"
 		  "cT  Set time type%-11c0  Lock\n"
 		 "b^L  Redraw%-18c?  Help, conf\n"
 	};
@@ -6075,7 +6075,7 @@ static int set_sort_flags(int r)
 
 		if (cfg.reverse)
 			entrycmpfn = &reventrycmp;
-	} else if (r == CONTROL('T')) {
+	} else if (r == CONTROL('S')) {
 		/* Cycling order: clear -> size -> time -> clear */
 		if (cfg.timeorder)
 			r = 's';
