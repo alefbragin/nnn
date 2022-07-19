@@ -627,7 +627,7 @@ static const char * const messages[] = {
 	"cancelled",
 	"failed!",
 	"session name: ",
-	"'c'p/'m'v as?",
+	"'p'aste/'t'ransfer as?",
 	"'c'urrent/'s'el?",
 	"%s %s? [Esc/n/N cancels]",
 	"limit exceeded",
@@ -2491,7 +2491,7 @@ static bool cpmv_rename(int choice, const char *path)
 	int fd;
 	uint_t count = 0, lines = 0;
 	bool ret = FALSE;
-	char *cmd = (choice == 'c' ? cp : mv);
+	char *cmd = (choice == 'p' ? cp : mv);
 	char buf[sizeof(patterns[P_CPMVRNM]) + (MAX(sizeof(cp), sizeof(mv))) + (PATH_MAX << 1)];
 
 	fd = create_tmp_file();
@@ -2561,7 +2561,7 @@ static bool cpmvrm_selection(enum action sel, char *path)
 		break;
 	case SEL_CPMVAS:
 		r = get_input(messages[MSG_CP_MV_AS]);
-		if (r != 'c' && r != 'm') {
+		if (r != 'p' && r != 't') {
 			printmsg(messages[MSG_INVALID_KEY]);
 			return FALSE;
 		}
