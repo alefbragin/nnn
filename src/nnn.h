@@ -210,8 +210,8 @@ static struct key bindings[] = {
 	/* Create archive */
 	{ 'z',            SEL_ARCHIVE },
 	/* Sort toggles */
-	{ 'w',            SEL_SORT },
-	{ CONTROL('W'),   SEL_SORT },
+	{ 'o',            SEL_SORT },
+	{ CONTROL('O'),   SEL_SORT },
 	/* Redraw window */
 	{ CONTROL('L'),   SEL_REDRAW },
 	/* Select current file path */
@@ -240,8 +240,8 @@ static struct key bindings[] = {
 	{ 'x',            SEL_RM },
 	{ CONTROL('X'),   SEL_RM },
 	/* Open in a custom application */
-	{ 'o',            SEL_OPENWITH },
-	{ CONTROL('O'),   SEL_OPENWITH },
+	{ 'w',            SEL_OPENWITH },
+	{ CONTROL('W'),   SEL_OPENWITH },
 	/* Create a new file */
 	{ 'a',            SEL_NEW },
 	/* Show rename prompt */
