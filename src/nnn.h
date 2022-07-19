@@ -201,17 +201,17 @@ static struct key bindings[] = {
 	/* Toggle hide .dot files */
 	{ '.',            SEL_HIDDEN },
 	/* Detailed listing */
-	{ 'I',            SEL_DETAIL },
+	{ 'S',            SEL_DETAIL },
 	/* File details */
-	{ 'i',            SEL_STATS },
-	{ CONTROL('I'),   SEL_STATS },
+	{ 's',            SEL_STATS },
+	{ CONTROL('S'),   SEL_STATS },
 	/* Toggle executable status */
 	{ '*',            SEL_CHMODX },
 	/* Create archive */
 	{ 'z',            SEL_ARCHIVE },
 	/* Sort toggles */
-	{ 's',            SEL_SORT },
-	{ CONTROL('S'),   SEL_SORT },
+	{ 'w',            SEL_SORT },
+	{ CONTROL('W'),   SEL_SORT },
 	/* Redraw window */
 	{ CONTROL('L'),   SEL_REDRAW },
 	/* Select current file path */
@@ -233,8 +233,8 @@ static struct key bindings[] = {
 	{ 't',            SEL_MV },
 	{ CONTROL('T'),   SEL_MV },
 	/* Copy/move from selection buffer and rename */
-	{ 'w',            SEL_CPMVAS },
-	{ CONTROL('W'),   SEL_CPMVAS },
+	{ 'i',            SEL_CPMVAS },
+	{ CONTROL('I'),   SEL_CPMVAS },
 	/* Delete from selection buffer */
 	{ 'd',            SEL_RM },
 	{ 'x',            SEL_RM },

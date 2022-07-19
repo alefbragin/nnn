@@ -4983,13 +4983,13 @@ static void show_help(const char *path)
 	"0\n"
 	"1FILES\n"
 	       "9o ^O  Open with%-15ca  Create new/link\n"
-	       "9i ^I  File stats%-14cI  Detail mode toggle\n"
+	       "9s ^S  File stats%-14cS  Detail mode toggle\n"
 	       "9r ^R  Rename/dup%-14cR  Batch rename\n"
 		  "cz  Archive%-17ce  Edit file\n"
 		  "c*  Toggle exe%-14c>  Export list\n"
 	 "3Space y ^Y  (Un)select%-12cv-v  Select range/clear\n"
 	          "cV  Select all%-13c^V  Invert sel\n"
-	       "9p ^P  Copy here%-12cw ^W  Cp/mv sel as\n"
+	       "9p ^P  Copy here%-12ci ^I  Cp/mv sel as\n"
 	       "9t ^T  Move here%-15cE  Edit sel list\n"
 	     "7d x ^X  Delete%-16cEsc  Send to FIFO\n"
 	"0\n"
@@ -4997,7 +4997,7 @@ static void show_help(const char *path)
 	      "8Alt ;  Select plugin%-11c=  Launch app\n"
 	       "9! ^]  Shell%-19c]  Cmd prompt\n"
 		  "cc  Connect remote%-10cu  Unmount remote/archive\n"
-	       "9s ^S  Sort toggles%-12c$  Manage session\n"
+	       "9w ^W  Sort toggles%-12c$  Manage session\n"
 		  "cT  Set time type%-11c0  Lock\n"
 		 "b^L  Redraw%-18c?  Help, conf\n"
 	};
@@ -6074,7 +6074,7 @@ static int set_sort_flags(int r)
 
 		if (cfg.reverse)
 			entrycmpfn = &reventrycmp;
-	} else if (r == CONTROL('S')) {
+	} else if (r == CONTROL('W')) {
 		/* Cycling order: clear -> size -> time -> clear */
 		if (cfg.timeorder)
 			r = 's';
