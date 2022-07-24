@@ -3336,7 +3336,7 @@ static int filterentries(char *path, char *lastname)
 				case '-': // fallthrough /* Visit last visited dir */
 				case '.': // fallthrough /* Show hidden files */
 				case ';': // fallthrough /* Run plugin key */
-				case '=': // fallthrough /* Launch app */
+				case '\\': // fallthrough /* Launch app */
 				case '>': // fallthrough /* Export file list */
 				case '@': // fallthrough /* Visit start dir */
 				case ']': // fallthorugh /* Prompt key */
@@ -4994,7 +4994,7 @@ static void show_help(const char *path)
 	     "7d x ^X  Delete%-16cEsc  Send to FIFO\n"
 	"0\n"
 	"1MISC\n"
-	      "8Alt ;  Select plugin%-11c=  Launch app\n"
+	      "8Alt ;  Select plugin%-11c\\  Launch app\n"
 	       "9! ^]  Shell%-19c]  Cmd prompt\n"
 		  "cc  Connect remote%-10cu  Unmount remote/archive\n"
 	       "9o ^O  Sort toggles%-12c$  Manage session\n"

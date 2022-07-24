@@ -263,7 +263,7 @@ static struct key bindings[] = {
 	{ '!',            SEL_SHELL },
 	{ CONTROL(']'),   SEL_SHELL },
 	/* Launcher */
-	{ '=',            SEL_LAUNCH },
+	{ '\\',           SEL_LAUNCH },
 	/* Show command prompt */
 	{ ']',            SEL_PROMPT },
 	/* Lock screen */
