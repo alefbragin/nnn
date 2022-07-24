@@ -162,13 +162,16 @@ static struct key bindings[] = {
 	{ 'f',            SEL_FIRST },
 	{ CONTROL('F'),   SEL_FIRST },
 	/* HOME */
-	{ '~',            SEL_CDHOME },
+	{ '@',            SEL_CDHOME },
+	// { CONTROL('@'),   SEL_CDHOME },
 	/* Initial directory */
-	{ '@',            SEL_CDBEGIN },
+	{ 'b',            SEL_CDBEGIN },
+	{ CONTROL('B'),   SEL_CDBEGIN },
 	/* Last visited dir */
-	{ '-',            SEL_CDLAST },
+	{ ',',            SEL_CDLAST },
+	{ CONTROL('^'),   SEL_CDLAST },
 	/* Go to / */
-	{ '`',            SEL_CDROOT },
+	{ '0',            SEL_CDROOT },
 	/* Leader key */
 	{ '\'',           SEL_BMOPEN },
 	/* Connect to server over SSHFS */

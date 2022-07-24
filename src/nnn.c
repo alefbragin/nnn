@@ -3333,15 +3333,11 @@ static int filterentries(char *path, char *lastname)
 				switch (*ch) {
 				// TODO: try to bind ^M: replace all \r to KEY_ENTER
 				// case ',': // fallthrough /* Mark CWD */
-				case '-': // fallthrough /* Visit last visited dir */
 				case '.': // fallthrough /* Show hidden files */
 				case ';': // fallthrough /* Run plugin key */
 				case '\\': // fallthrough /* Launch app */
 				case '>': // fallthrough /* Export file list */
-				case '@': // fallthrough /* Visit start dir */
 				case ']': // fallthorugh /* Prompt key */
-				case '`': // fallthrough /* Visit / */
-				case '~': /* Go HOME */
 					goto end;
 				}
 			}
@@ -4967,7 +4963,7 @@ static void show_help(const char *path)
 	"1NAVIGATION\n"
 	       "9Up k  Up%-16cPgUp ^U  Page up\n"
 	       "9Dn j  Down%-14cPgDn ^D  Page down\n"
-	       "9Lt h  Parent%-12c~ ` @ -  ~, /, start, prev\n"
+	       "9Lt h  Parent%-2c(^)@ 0 (^)b ,(^^)  Home/root/start/prev\n"
 	   "5Ret Rt l  Open%-17cf ^F  First file/match\n"
 	       "9g ^A  Top%-21c.  Toggle hidden\n"
 	       "9G ^E  End%-20c^J  Toggle auto-advance on open\n"
