@@ -267,7 +267,7 @@ static struct key bindings[] = {
 	/* Show command prompt */
 	{ ']',            SEL_PROMPT },
 	/* Lock screen */
-	{ '0',            SEL_LOCK },
+	{ '#',            SEL_LOCK },
 	/* Manage sessions */
 	{ '$',            SEL_SESSIONS },
 	/* Export list */

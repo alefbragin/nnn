@@ -4998,7 +4998,7 @@ static void show_help(const char *path)
 	       "9! ^]  Shell%-19c]  Cmd prompt\n"
 		  "cc  Connect remote%-10cu  Unmount remote/archive\n"
 	       "9o ^O  Sort toggles%-12c$  Manage session\n"
-		  "cT  Set time type%-11c0  Lock\n"
+		  "cT  Set time type%-11c#  Lock\n"
 		 "b^L  Redraw%-18c?  Help, conf\n"
 	};
 
