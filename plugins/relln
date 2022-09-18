@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Description: Make symlink with path that relative to $PWD
+#
+# Shell: POSIX compliant
+# Author: alefbragin
+
+selection=${NNN_SEL:-${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.selection}
+
+xargs -0 -L1 < "${selection}" | while IFS= read -r line; do
+    ln -s "$(realpath --relative-to="${PWD}" "${line}")" || exit 1
+done
+
+if [ -p "$NNN_PIPE" ]; then
+    printf "-" > "$NNN_PIPE"
+fi
